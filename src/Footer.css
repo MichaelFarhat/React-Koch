@@ -1,0 +1,297 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 110%;
+  height: 100%;
+  padding: 0 20px;
+  overflow: hidden;
+  background-color: #84817a;
+  color: #d1ccc0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer > div {
+  margin-left: -3%;
+}
+
+.footer__left {
+  flex: 0.3;
+  -ms-flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__left img {
+  height: 100px;
+}
+
+.footer__left p {
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer__text {
+  flex: 0.7;
+  -ms-flex: 0.7;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.footer__center {
+  height: 100%;
+  margin-top: 150px;
+}
+
+.footer__center p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.footer__center h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.footer__right {
+  height: 100%;
+  margin-top: 150px;
+}
+
+.footer__right p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.footer__right h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1180px) {
+  .footer > div {
+    margin-left: -5%;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .footer > div {
+    margin-left: -7%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer__center p {
+    font-size: 17px;
+  }
+
+  .footer__center h2 {
+    font-size: 22px;
+  }
+
+  .footer__right p {
+    font-size: 17px;
+  }
+
+  .footer__right h2 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .footer__center p {
+    font-size: 15px;
+  }
+
+  .footer__center h2 {
+    font-size: 20px;
+  }
+
+  .footer__right p {
+    font-size: 15px;
+  }
+
+  .footer__right h2 {
+    font-size: 20px;
+  }
+
+  .footer__left img {
+    height: 95px;
+  }
+}
+
+@media only screen and (max-width: 837px) {
+  .footer__center p {
+    font-size: 14px;
+  }
+
+  .footer__center h2 {
+    font-size: 18px;
+  }
+
+  .footer__right p {
+    font-size: 14px;
+  }
+
+  .footer__right h2 {
+    font-size: 18px;
+  }
+
+  .footer__left img {
+    height: 90px;
+  }
+  .footer__left p {
+    margin-top: 9px;
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 753px) {
+  .footer__center p {
+    font-size: 13px;
+  }
+
+  .footer__center h2 {
+    font-size: 16px;
+  }
+
+  .footer__right p {
+    font-size: 13px;
+  }
+
+  .footer__right h2 {
+    font-size: 16px;
+  }
+
+  .footer__left img {
+    height: 85px;
+  }
+  .footer__left p {
+    margin-top: 9px;
+    margin-bottom: 18px;
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+  .footer__left {
+    flex: 0.5;
+    -ms-flex: 0.5;
+  }
+
+  .footer__text {
+    flex: 0.5;
+    -ms-flex: 0.5;
+    flex-direction: column;
+    -ms-flex-direction: column;
+  }
+
+  .footer__center,
+  .footer__right {
+    height: fit-content;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .footer__center p {
+    font-size: 12px;
+  }
+
+  .footer__center h2 {
+    font-size: 14px;
+  }
+
+  .footer__right p {
+    font-size: 12px;
+  }
+
+  .footer__right h2 {
+    font-size: 14px;
+  }
+
+  .footer__left img {
+    height: 85px;
+  }
+  .footer__left p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer__left {
+    flex: 0.3;
+    -ms-flex: 0.3;
+    padding-left: 5px;
+  }
+  .footer__text {
+    flex: 0.7;
+    -ms-flex: 0.7;
+  }
+  .footer__left img {
+    height: 80px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .footer {
+    flex-direction: column;
+    -ms-flex-direction: column;
+    padding-top: 8px;
+  }
+  .footer__left {
+    border-bottom: 1px solid;
+    padding-bottom: 2px;
+  }
+  .footer__left img {
+    height: 65px;
+  }
+  .footer__left p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 10px;
+  }
+  .footer__center p {
+    margin: 0;
+  }
+
+  .footer__center h2 {
+    margin-bottom: 3px;
+  }
+
+  .footer__right p {
+    margin: 0;
+  }
+
+  .footer__right h2 {
+    margin-bottom: 3px;
+  }
+}
+
+@media only screen and (max-height: 550px) {
+  .footer__center p {
+    font-size: 8px;
+  }
+
+  .footer__center h2 {
+    font-size: 10px;
+  }
+
+  .footer__right p {
+    font-size: 8px;
+  }
+
+  .footer__right h2 {
+    font-size: 10px;
+  }
+  .footer__left p {
+    font-size: 8px;
+  }
+}

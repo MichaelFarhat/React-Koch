@@ -1,0 +1,187 @@
+.menu {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Dancing Script", cursive;
+  color: #cd6133;
+}
+
+.menu__header h2 {
+  width: fit-content;
+  padding-top: 10px;
+  margin: 0 auto;
+  font-size: 33px;
+  border-bottom: 1px solid #cd6133;
+}
+
+.menu__message {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+.menu__sites {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 74%;
+  background-image: url("./images/table.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+
+.menu__sites[data-image="one"] {
+  background-image: url("./images/soup.jpg");
+}
+
+.menu__sites[data-image="two"] {
+  background-image: url("./images/steak.jpg");
+}
+
+.menu__sites[data-image="three"] {
+  background-image: url("./images/cake.jpg");
+}
+
+.menu__site {
+  width: fit-content;
+  height: 90%;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgba(255, 218, 121, 0.9);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+  transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transform: translateY(80%);
+  -moz-transform: translateY(80%);
+  -ms-transform: translateY(80%);
+  -webkit-transform: translateY(80%);
+  -o-transform: translateY(80%);
+}
+
+.menu.passed .menu__site {
+  transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.menu__site:hover {
+  background-color: rgb(204, 174, 98);
+  transform: scale(1.1) !important;
+  -moz-transform: scale(1.1) !important;
+  -ms-transform: scale(1.1) !important;
+  -webkit-transform: scale(1.1) !important;
+  -o-transform: scale(1.1) !important;
+}
+
+.menu__siteHeader h2 {
+  font-size: 26px;
+}
+
+.menu__site p {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1285px) {
+  .menu__site {
+    padding: 5px;
+  }
+
+  .menu__site:hover {
+    transform: scale(1.05) !important;
+    -moz-transform: scale(1.05) !important;
+    -ms-transform: scale(1.05) !important;
+    -webkit-transform: scale(1.05) !important;
+    -o-transform: scale(1.05) !important;
+  }
+}
+
+@media only screen and (max-width: 1104px) {
+  .menu__siteHeader h2 {
+    font-size: 23px;
+  }
+
+  .menu__site p {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .menu__site {
+    flex: 1;
+    -ms-flex: 1;
+    margin: 0 4px;
+  }
+  .menu__site:hover {
+    flex: 3;
+    -ms-flex: 3;
+  }
+  .menu__siteHeader h2 {
+    border-bottom: 1px solid #cd6133;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .menu__header h2 {
+    padding-top: 0;
+    font-size: 29px;
+  }
+
+  .menu__message {
+    font-size: 20px;
+  }
+
+  .menu__siteHeader h2 {
+    font-size: 20px;
+  }
+
+  .menu__site p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .menu__message {
+    padding: 0 5px;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .menu__site {
+    border-radius: 0px;
+  }
+  .menu__header h2 {
+    font-size: 25px;
+  }
+
+  .menu__message {
+    font-size: 18px;
+  }
+  .menu__siteHeader h2 {
+    font-size: 18px;
+  }
+
+  .menu__site p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .menu__site p {
+    font-size: 10px;
+  }
+}
